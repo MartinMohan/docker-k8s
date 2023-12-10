@@ -9,6 +9,7 @@ docker run -it hello-world-image bash
 ## Is microk8s installed?   
 sudo microk8s start  
 sudo microk8s kubectl get nodes  
+sudo microk8s enable registry. # This command sets up a private registry within MicroK8s that listens on port 32000.
 
 # Step by step guide  
 ## make   
