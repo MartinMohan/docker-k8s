@@ -5,6 +5,7 @@ Simple example to help learn k8s.
 microk8s and docker should already be installed.  
 ## Is docker installed?  
 docker image ls  
+docker run -it hello-world-image bash
 ## Is microk8s installed?   
 sudo microk8s start  
 sudo microk8s kubectl get nodes  
