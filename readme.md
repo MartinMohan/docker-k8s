@@ -1,4 +1,4 @@
-# Introduction:   DO NOT USE STILL IN DEVELOPMENT
+# Introduction  
 Simple example to help learn k8s.  
    
 # Prerequisites  

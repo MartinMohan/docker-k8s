@@ -1,5 +1,5 @@
 # Define variables
-IMAGE_NAME=hello-world-image
+IMAGE_NAME=hello-world-flask
 
 # Build the Docker image and tag for link to mikrok8s
 build:
@@ -17,3 +17,4 @@ all: deploy
 # Delete the deployment
 clean:
 	kubectl delete -f k8s-deployment.yaml
+	docker image prune -a
