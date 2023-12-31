@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mmhello-deployment
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: mmhello
+  template:
+    metadata:
+      labels:
+        app: mmhello
+    spec:
+      containers:
+        - name: mmhello
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 5000
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
