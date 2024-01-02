@@ -3,8 +3,8 @@ FROM python:3.8-slim
 WORKDIR /app
 COPY . /app
 RUN pip install flask
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
+# Make port 5000 available does not work see docker-compose
+#EXPOSE 5000
 
 # Define environment variable
 ENV FLASK_APP=app.py
